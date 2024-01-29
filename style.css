@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(1, 1, 12);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(16, 16, 35);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-size: 1.02rem;
+    color: rgb(201, 201, 242);
+}
+.left{
+    font-size: 1.2rem;
+}
+#home{
+    margin:90px 90px;
+}
+.mainPage{
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 0;
+    align-items: center;
+}
+.mainPage div{
+    width: 70%;
+}
+.leftcontent{
+    font-size: 40px;    
+
+}
+#element{
+    color: rgb(94, 54, 130);
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+/* about me section */
+#about{
+    padding: 80px 80px;
+    color: white;
+}
+.row{
+    display:flex; /*content will be side by side*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 80%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    font-size: 20px;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+}
+
+/* education  */
+
+#education{
+    margin: 60px;
+}
+.masters{
+    padding: 20px 80px 0 80px;
+    display: flex;
+    margin: 60px;
+    background-color: rgb(19, 19, 34);
+}
+.masters:hover{
+    background-color: rgb(48, 18, 74);
+}
+.masters img{
+    width: 90%;
+    height: 70%;
+    margin-top: 50px;
+}
+.bachelors{
+    padding: 0 80px 20px 80px;
+    display: flex;
+    margin: 60px;
+    background-color: rgb(19, 19, 34);
+}
+.bachelors:hover{
+    background-color: rgb(48, 18, 74);
+}
+.bachelors img{
+    width: 90%;
+    height: 70%;
+    margin-top: 50px;
+}
+.course-details{
+    padding-top: 4%;
+    
+}
+
+.heading{
+    margin-left: 8%;
+    
+}
+.course-details h4{
+    font-weight: 200;
+    
+} 
+
+/* experience */
+#experience{
+    padding: 20px 60px 20px 60px;
+    background-color: rgb(19, 19, 34);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    
+}
+#experience:hover{
+    background-color: rgb(48, 18, 74);
+}
+#experience ul {
+    list-style-type: disc; /* Use disc for bullet points */
+    margin-left: 40px; /* Adjust the left margin for indentation */
+  }
+  
+  #experience ul li {
+    margin-bottom: 10px; /* Adjust the bottom margin between list items */
+  }
+  
+/* skills  */
+#skills{
+    margin: 60px;
+}
+#skills div{
+    margin: 40px 150px;
+    background-color: rgb(19, 19, 34);
+    padding: 30px;   
+}
+#skills div:hover{
+    background-color: rgb(48, 18, 74);
+}
+#skills h3{
+    font-weight: 1000;
+}
+
+/* contact */
+#contact{
+    margin: 60px 180px 180px;
+    padding: 5px;
+}
+#contact p{
+        margin: 20px;
+}
+#contact p i{
+    margin-right: 15px;
+    color: rgb(94, 54, 130);
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    color:#ababab;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: rgb(94, 54, 130);
+    transform: translateY(-5px);
+}
+
+.buttons{
+    border-color: rgb(94, 54, 130);
+    background-color: rgb(94, 54, 130);
+    color: white;   
+}
+
+.buttons:hover{
+    border-color: rgb(94, 54, 130);
+    background-color: black;
+    color: white;   
+}
+#resume{
+    margin: 30px;
+    width: 130px;
+}
+/* for small screen  */
+.fa-solid{
+    display: none !important;
+}
+
+/* projects  */
+.project{
+    display: flex;
+    margin:30px 50px 30px 180px;
+    
+}
+
+.card{
+    margin-right: 80px;
+    transition: transform 0.5s;
+    
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(94, 54, 130);
+}
+.card-body{
+    background-color: rgb(19, 19, 34);
+}
+
+
+
+
+
