@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Vishnu Vaishnavi Maddilate</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,75 +13,135 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
 </head>
-
-<body>
+<body data-bs-target="#navbar" data-bs-offset="100">
     <!-- header part -->
-    
-    <header>
-        <nav>
-            <div class="left" id="start"></div>
-            <div class="right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
-                </ul>
-                <i class="fa-sharp fa-solid fa-bars"></i>
+    <header class="position-fixed top-0 start-0 w-100" style="z-index: 1000;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid mx-4">
+                <a class="navbar-brand" href="#">Vishnu Vaishnavi Maddilate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse my-3" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <!-- home page -->
-    <div id="home">
-        <main>
-            <section class="mainPage">
-                <div class="leftcontent">Maddilate Vishnu Vaishnavi
-                    <div>I'm <span id="element"></span></div>
-                    <!-- typejs to change the below text -->
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/vishnuvaishnavi" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-                        <a href="https://github.com/vishnuvaishnaviM" target="_blank"> <i class="fa-brands fa-github"></i> </a>
-                        <br>
-                        
-                    </div>
-                    <a  href="Resume.pdf" target="_blank" download class="btn buttons" id="resume">Resume</a>
-
+        <!-- About section -->
+        <div id="about" class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <img src="self.jpeg" class="img-fluid" alt="Self Image">
+                    <a href="Resume.pdf" target="_blank" download class="btn buttons mt-3">Download Resume</a>
                 </div>
-
-                <!-- <div class="rightcontet">
-                 to add any image 
-            </div> -->
-            </section>
-        </main>
-    </div>
-    <!-- About section -->
-    <div id="about">
-        <div class="container"></div>
-        <div class="row">
-            <div class="about-col-1">
-                <img src="self.jpeg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <br>
-                <p>As a dedicated software professional, I thrive on exploring new technologies and excelling in diverse
-                    domains. With substantial work experience in automation testing, complemented by hands-on projects,
-                    and a certification in web development, I am enthusiastic about contributing to both roles. My goal
-                    is to bring innovation and dynamism to both web development and automation testing, leveraging my
-                    expertise to drive excellence in both areas.</p>
+                <div class="col-md-8">
+                    <h1 class="sub-title fs-1 fw-normal text-white">About Me</h1>
+                    <br>
+                    <p class="fs-5">As a dedicated software professional, I thrive on exploring new technologies and excelling in diverse domains. With substantial work experience in automation testing, complemented by hands-on projects, and a certification in web development, I am enthusiastic about contributing to both roles. My goal is to bring innovation and dynamism to both web development and automation testing, leveraging my expertise to drive excellence in both areas.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.linkedin.com/in/vishnuvaishnavi" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                        <a href="https://github.com/vishnuvaishnaviM" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+                        <a href="mailto:vmaddila@buffalo.edu" target="_blank"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <!-- skills  -->
+<div  id="skills" class="mb-3 pb-3">
+    <h1 class="sub-title heading">Skills</h1>
 
+        <div m-5>
+            <p><b><i>Languages:</i></b> HTML, CSS, Python, Java, Javascript</p>
+            <p><b><i>Frameworks:</i></b> NodeJs, ExpressJs, ReactJs, Bootstrap, MaterialUi, Tailwind, Selenium, Karate</p>
+            <p><b><i>Databases:</i></b> MongoDB, Postgres, MySql</p>
+            <p><b><i>Tools:</i></b> Git, JIRA, Postman, Jenkins, Docker, BitBucket</p>
+            <p><b><i>IDE:</i></b> Visual Studio Code, Google colab, Kaggle, IntelliJ, Eclipse</p>
+        </div>
+</div>
+    <!-- projects    -->
+<div class="container pl-5" id="projects">
+    <h1 class="sub-title heading p-5 m-5">Projects</h1>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card mb-4 project-card">
+                <img src="used_cars.jpg" class="card-img-top" alt="Car Price Prediction">
+                <div class="card-overlay">
+                    <h5 class="card-title mb-2">Used Car Price Prediction Project</h5>
+                    <p class="card-text text-center px-3">
+                        End-to-end ML project predicting used car prices.
+                        Employed models including decision trees, KNN, XGBoost.
+                        Deployed XGBoost model via Flask in a web app with HTML, CSS, Bootstrap, and JavaScript.
+                        Enhanced user experience with dynamic interactions and visualization using Chart.js.
+                    </p>
+                    <a href="https://github.com/vishnuvaishnaviM/used_car_price_prediction" target="_blank" class="btn btn-primary buttons">Github URL</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mb-4 project-card">
+                <img src="airbnb.png" class="card-img-top" alt="Wanderlust">
+                <div class="card-overlay">
+                    <h5 class="card-title mb-2">Wanderlust - Full-Stack Web Application</h5>
+                    <p class="card-text text-center px-3">
+                        Developed using Node.js, Express.js, MongoDB, Render, HTML, CSS, Bootstrap, and JavaScript.
+                        Implemented MVC architecture for maintainability.
+                    </p>
+                    <a href="https://wanderlust-4s64.onrender.com/listing/" target="_blank" class="btn btn-primary buttons">Website URL</a>
+                  <a href="https://github.com/vishnuvaishnaviM/wanderLust" target="_blank" class="mt-3 btn btn-primary buttons">Github URL</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mb-4 project-card">
+                <img src="portfolio.png" class="card-img-top" alt="Resume Portfolio">
+                <div class="card-overlay">
+                    <h5 class="card-title mb-2">Responsive Resume Portfolio</h5>
+                    <p class="card-text text-center px-3">
+                        Responsive Portfolio website created using HTML, CSS, Bootstrap, Javascript.
+                    </p>
+                    <a href="https://vishnuvaishnavim.github.io/VishnuVaishnavi.github.io/" target="_blank" class="btn btn-primary buttons">Website URL</a>
+                  <a href="https://github.com/vishnuvaishnaviM/VishnuVaishnavi.github.io" target="_blank" class="mt-3 btn btn-primary buttons">Github URL</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card mb-4 project-card">
+                    <img src="CNN_image_classification.PNG" class="card-img-top" alt="CNN Image Classification">
+                    <div class="card-overlay">
+                        <h5 class="card-title mb-2">CNN Image Classification</h5>
+                        <p class="card-text text-center px-3">
+                            Implemented VGG-13 CNN model for image classification using PyTorch, incorporating dropout and regularization. Deployed as a Flask web app for predicting images of dogs, food, and vehicles, with a frontend in HTML, CSS, and JavaScript for dynamic user interaction.
+                        </p>
+                      <a href="https://github.com/vishnuvaishnaviM/CNN_image_classification" target="_blank" class="mt-3 btn btn-primary buttons">Github URL</a>
+                    </div>
+                    </div>
+                </div>
+        </div>
     </div>
     <!-- Education section  -->
-    
     <div id="education">
         <h1 class="sub-title heading">Education</h1>
         <div class="masters">
@@ -89,28 +149,29 @@
                 <img src="ub.jpg">
             </div>
             <div class="course-details">
-                <h2>Masters of Science in Computer Science and Engineering</h2>
-                <h4>August 2023 - Present</h4>
-                <h4>CGPA - 3.91/4.0</h4>
+                <h3>Masters of Science in Computer Science and Engineering</h3>
+                <h5 class="font-weight-light">August 2023 - Present</h5>
+                <h4 class="font-weight-light"><i>CGPA - 3.91/4.0</i></h4>
                 <br>
-                <h3>Relevant Course Work</h4>
-                    <p>Analysis of Algorithms<br>Computer Security<br>Machine Learning<br>Data Intensive Computing</p>
+                <h4>Relevant Course Work</h4>
+                    <p>Analysis of Algorithms<br>Machine Learning<br>Deep Learning<br>Data Intensive Computing<br>Data Model and Query Language<br>Opearting Systems</p>
             </div>
         </div>
         <div class="bachelors">
             <div class="clg-img">
-                <img src="sastra.jpg">
+                <img class=" pb-3 pr-4" src="sastra.jpg">
             </div>
-            <div class="course-details">
-                <h2>Bachelor of Technology in Electrical and Electronics Engineering</h2>
-                <h4>August 2016 - August 2020</h4>
-                <h4>CGPA - 8.57/10</h4>
+            <div class="course-details pt-4">
+                <h3>Bachelor of Technology in Electrical and Electronics Engineering</h3>
+                <h5 class="font-weight-light">August 2016 - August 2020</h5>
+                <h4 class="font-weight-light"><i>CGPA - 8.57/10</i></h4>
+                <br>
+                <h4>Relevant Course Work</h4>
+                    <p>Java Programming</p>
             </div>
         </div>
     </div>
-
     <!-- Experience -->
-    
     <div id="experiences">
         <h1 class="sub-title heading">Work Experience</h1>
         <div id="experience">
@@ -140,84 +201,28 @@
         </ul>
         </div>
     </div>
-<!-- projects  -->
-    <div id="projects">
-        <h1 class="sub-title heading">Projects</h1>
-        <div class=project>
-            <div class="card text-bg-dark project-1" style="width: 18rem;">
-                <img src="used_cars.jpg" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Used Car Price Prediction</h5>
-                  <p class="card-text">Tech Stack: HTML, CSS, Bootstrap, Javascript, chart.js, Flask, ML Models(XGBoost)</p>
-                  <a href="https://github.com/vishnuvaishnaviM/used_car_price_prediction" target="_blank" class="btn btn-primary buttons">Github URL</a>
-                </div>
-              </div>
-            <div class="card text-bg-dark project-2" style="width: 18rem;">
-                <img src="portfolio.png" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Personal Portfolio</h5>
-                  <p class="card-text">Tech Stack: HTML, Typed JS, CSS, Bootstrap</p>
-                  <a href="https://github.com/vishnuvaishnaviM/VishnuVaishnavi.github.io" target="_blank" class="btn btn-primary buttons">Github URL</a>
-                </div>
-              </div>
-        </div>
-    </div>
-
-
-    <!-- skills  -->
-    
-    <div id="skills">
-        <h1 class="sub-title heading">Skills</h1>
-        <div class="languages">
-            <h3>Languages </h3>
-            <br>
-            <p>Python, Java, Javascript, HTML, CSS</p>
-        </div>
-        <div class="frameworks">
-            <h3>Frameworks</h3>
-            <br>
-            <p>NodeJs, ExpressJs, Bootstrap, Selenium, Karate</p>
-        </div>
-        <div class="database">
-            <h3>Databases</h3>
-            <br>
-            <p>MySql, Postgres, MongoDB</p>
-        </div>
-
-        <div class="tools">
-            <h3>Tools</h3>
-            <br>
-            <p>Git, JIRA, Postman, Bitbucket</p>
-        </div>
-    </div>
     <!-- contact  -->
-    
     <div id="contact">
         <h1 class="sub-title heading">Contact Me</h1>
-        <p> <i class="fa-sharp fa-regular fa-paper-plane"></i> vmaddila@buffalo.edu</p>
+        <p> <i class="fa-regular fa-envelope"></i>vmaddila@buffalo.edu</p>
         <p> <i class="fa-solid fa-square-phone-flip"></i> +1 716 808 5025</p>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/vishnuvaishnavi" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/vishnuvaishnaviM" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+            <a href="https://www.linkedin.com/in/vishnuvaishnavi" target="_blank"> <i class="fa-brands fa-linkedin fa-lg"></i> </a>
+            <a href="https://github.com/vishnuvaishnaviM" target="_blank"> <i class="fa-brands fa-github fa-lg"></i> </a>
+            <a href="mailto:vmaddila@buffalo.edu" target="_blank">
+                <i class="fa-regular fa-envelope fa-lg"></i>
+            </a>
             <br>
-            
         </div>
         <a  href="Resume.pdf" target="_blank" download class="btn buttons" id="resume">Resume</a>
     </div>
-
-
-
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Student', 'Coder', 'Automation Tester', 'AI Enthusiast', 'Web Developer'],
-            typeSpeed: 70,
-        });
-    </script>
     <!-- Place this script tag just before the closing </body> tag -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="app.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="script.js"></script>
+</body>
 </html>
